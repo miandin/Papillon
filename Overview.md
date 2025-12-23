@@ -10,7 +10,6 @@ Imagine having an expert developer sitting beside you, ready to explain complex 
 Built on proven technology (Based on Roo’s proven foundation) and designed with developers in mind, Papillon AI is more than just another AI coding assistant—it's your intelligent development partner that understands context, learns from your codebase, and adapts to your workflow.
 
 ---
-<img width="735" height="874" alt="image" src="https://github.com/user-attachments/assets/c75d64d2-74a1-48d5-8698-524b14dc79c0" />
 
 ## 🦋 Why Papillon AI?
 
@@ -163,7 +162,7 @@ Advanced users can extend Papillon AI with:
 
 ### Step 1: Install
 ```bash
-code --install-extension papillon-ai-1.0.0.vsix
+code --install-extension papillon-ai-1.1.0.vsix
 ```
 
 ### Step 2: Configure
