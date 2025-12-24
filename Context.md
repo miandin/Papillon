@@ -21,7 +21,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Core AI capabilities for code generation, explanation, and improvement using multiple LLM providers.
 
-**Reference:** `src/api/index.ts`, `src/core/webview/ClineProvider.ts`
+
 
 ### User Stories
 
@@ -41,7 +41,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Token counting per provider
 - ✅ Streaming responses support
 
-**Files:** `src/api/providers/*`, `src/api/index.ts` (lines 90-150)
+
 
 ---
 
@@ -56,7 +56,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Explanation appears in chat interface
 - ✅ Supports multiple programming languages
 
-**Files:** `src/package.json` (lines 119-122), `src/activate/`
 
 ---
 
@@ -71,7 +70,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Provides refactoring suggestions
 - ✅ Maintains code functionality
 
-**Files:** `src/package.json` (lines 129-132)
+
 
 ---
 
@@ -86,7 +85,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Suggests fixes with explanations
 - ✅ Preserves code structure
 
-**Files:** `src/package.json` (lines 124-127)
+
 
 ---
 
@@ -94,7 +93,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Conversational AI interface for natural language coding assistance.
 
-**Reference:** `webview-ui/src/components/chat/`, `src/core/webview/`
+
 
 ### User Stories
 
@@ -110,7 +109,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Message streaming with real-time updates
 - ✅ Task history preservation
 
-**Files:** `webview-ui/src/components/chat/ChatView.tsx`, `webview-ui/src/components/chat/ChatTextArea.tsx`
+
 
 ---
 
@@ -125,7 +124,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Task isolation (separate conversation contexts)
 - ✅ Task naming and organization
 
-**Files:** `src/package.json` (lines 74-77, 139-142)
+
 
 ---
 
@@ -140,7 +139,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Supports file selection, code selection
 - ✅ Context size management
 
-**Files:** `src/package.json` (lines 134-137, 312-318)
+
 
 ---
 
@@ -155,7 +154,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Task preview with metadata
 - ✅ Task restoration
 
-**Files:** `src/package.json` (lines 89-92), `webview-ui/src/components/history/`
+`
 
 ---
 
@@ -178,7 +177,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Server status monitoring
 - ✅ Singleton pattern (one instance across webviews)
 
-**Files:** `src/services/mcp/McpServerManager.ts`, `src/services/mcp/McpHub.ts`
+
 
 ---
 
@@ -193,7 +192,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Tool invocation through AI
 - ✅ Tool result handling
 
-**Files:** `src/services/mcp/`
 
 ---
 
@@ -208,7 +206,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Resource caching
 - ✅ Error handling for unavailable resources
 
-**Files:** `src/services/mcp/`
+
 
 ---
 
@@ -216,7 +214,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Semantic code search and understanding using vector embeddings.
 
-**Reference:** `src/services/code-index/`, `src/package.json` (lines 426-432)
+
 
 ### User Stories
 
@@ -232,7 +230,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Qdrant vector store integration
 - ✅ Configurable batch size (1-200 embeddings)
 
-**Files:** `src/services/code-index/manager.ts`, `src/services/code-index/orchestrator.ts`
+
 
 ---
 
@@ -247,7 +245,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Result ranking by relevance
 - ✅ Search result caching
 
-**Files:** `src/services/code-index/search-service.ts`, `src/services/code-index/interfaces.ts`
+
 
 ---
 
@@ -262,7 +260,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Error recovery mechanisms
 - ✅ Manual re-indexing option
 
-**Files:** `src/services/code-index/state-manager.ts`
+
 
 ---
 
@@ -270,7 +268,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** AI assistance for terminal commands and shell interactions.
 
-**Reference:** `src/integrations/terminal/`, `src/package.json` (lines 144-157, 205-224)
+
 
 ### User Stories
 
@@ -286,7 +284,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Command: "Terminal: Explain Command"
 - ✅ Terminal output capture
 
-**Files:** `src/integrations/terminal/TerminalRegistry.ts`, `src/activate/terminal.ts`
+
 
 ---
 
@@ -310,7 +308,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Puppeteer-based browser control for web testing and automation.
 
-**Reference:** `src/services/browser/`, `src/package.json` dependencies
+
 
 ### User Stories
 
@@ -326,7 +324,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Close browser sessions
 - ✅ Session state tracking
 
-**Files:** `src/services/browser/`, `webview-ui/src/components/chat/BrowserSessionRow.tsx`
+
 
 ---
 
@@ -342,7 +340,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Execute JavaScript
 - ✅ Capture console logs
 
-**Files:** `src/services/browser/`
 
 ---
 
@@ -350,7 +347,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** AI-powered file reading, writing, and modification capabilities.
 
-**Reference:** `src/core/`, `src/integrations/editor/`
 
 ### User Stories
 
@@ -366,7 +362,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Binary file detection
 - ✅ Large file handling
 
-**Files:** `src/core/`, dependencies: `mammoth`, `pdf-parse`, `exceljs`
+
 
 ---
 
@@ -382,7 +378,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Preserve file formatting
 - ✅ Undo/redo support
 
-**Files:** `src/core/`, `src/integrations/editor/`
+
 
 ---
 
@@ -397,7 +393,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Accept/reject changes
 - ✅ Diff URI scheme support
 
-**Files:** `src/integrations/editor/DiffViewProvider.ts`
+
 
 ---
 
@@ -421,7 +417,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Custom base URLs
 - ✅ Request timeout configuration (0-3600 seconds)
 
-**Files:** `src/package.json` (lines 414-420), Settings UI
+
 
 ---
 
@@ -439,7 +435,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Compliance Checking toggle
 - ✅ Role-Based Access Control toggle
 
-**Files:** `src/package.json` (lines 433-467), `webview-ui/src/i18n/locales/en/settings.json`
+
 
 ---
 
@@ -454,7 +450,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Migration support
 - ✅ Command: "Set Custom Storage Path"
 
-**Files:** `src/package.json` (lines 394-397, 159-162)
+
 
 ---
 
@@ -469,7 +465,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Auto-import on startup (configurable path)
 - ✅ Settings validation
 
-**Files:** `src/package.json` (lines 404-407, 164-167), `src/utils/autoImportSettings.ts`
+
 
 ---
 
@@ -477,7 +473,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Multi-language support for global accessibility.
 
-**Reference:** `src/i18n/`, `src/package.nls.*.json`
+
 
 ### User Stories
 
@@ -496,7 +492,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Manual language override
 - ✅ Complete UI translation
 
-**Files:** `src/package.nls.*.json`, `src/i18n/`, `webview-ui/src/i18n/`
+
 
 ---
 
@@ -519,7 +515,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Search and filter extensions
 - ✅ Extension installation
 
-**Files:** `src/services/marketplace/`, `webview-ui/src/components/marketplace/`
+
 
 ---
 
@@ -534,7 +530,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Prompt templates
 - ✅ Prompt sharing
 
-**Files:** `src/package.json` (lines 79-82), `src/services/roo-config/`
+
 
 ---
 
@@ -542,7 +538,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Cloud-based features for sync, collaboration, and enhanced capabilities.
 
-**Reference:** `packages/cloud/`, `src/extension.ts` (lines 54-58)
+
 
 ### User Stories
 
@@ -557,7 +553,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Auth state tracking
 - ✅ Secure credential storage
 
-**Files:** `packages/cloud/`, `src/extension.ts`
+
 
 ---
 
@@ -572,7 +568,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Conflict resolution
 - ✅ Offline support
 
-**Files:** `packages/cloud/`
+
 
 ---
 
@@ -587,7 +583,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Dismissible notifications
 - ✅ Cloud button in toolbar
 
-**Files:** `webview-ui/src/components/cloud/`, `src/package.json` (lines 104-107)
+
 
 ---
 
@@ -595,7 +591,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Inline code actions and quick fixes powered by AI.
 
-**Reference:** `src/activate/code-actions.ts`, `src/package.json` (lines 399-402)
+
 
 ### User Stories
 
@@ -610,7 +606,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ One-click fixes
 - ✅ Enable/disable toggle
 
-**Files:** `src/activate/code-actions.ts`, `src/package.json` (lines 399-402)
+
 
 ---
 
@@ -618,7 +614,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Advanced code search using ripgrep and glob patterns.
 
-**Reference:** `src/services/search/`, `src/services/ripgrep/`, `src/services/glob/`
+
 
 ### User Stories
 
@@ -633,7 +629,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Glob pattern filtering
 - ✅ Search result ranking
 
-**Files:** `src/services/search/`, `src/services/ripgrep/`
+
 
 ---
 
@@ -648,7 +644,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Custom ignore patterns (.rooignore)
 - ✅ Include/exclude rules
 
-**Files:** `src/services/glob/`, `src/core/ignore/RooIgnoreController.ts`
+
 
 ---
 
@@ -671,7 +667,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ User consent management
 - ✅ Privacy-preserving analytics
 
-**Files:** `packages/telemetry/`, `webview-ui/src/components/common/TelemetryBanner.tsx`
+
 
 ---
 
@@ -686,7 +682,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Stack trace collection
 - ✅ User privacy protection
 
-**Files:** `packages/telemetry/`, dependencies: `serialize-error`
+
 
 ---
 
@@ -710,7 +706,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Prevent completion with open todos (configurable)
 - ✅ Require todos for new tasks (configurable)
 
-**Files:** `src/package.json` (lines 375-378, 421-425), `webview-ui/src/utils/todo.ts`
+
 
 ---
 
@@ -725,7 +721,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Checkpoint restoration
 - ✅ Checkpoint warnings
 
-**Files:** `src/services/checkpoints/`, `webview-ui/src/components/chat/CheckpointWarning.tsx`
+
 
 ---
 
@@ -749,7 +745,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Visual indicator when active
 - ✅ Granular control per action type
 
-**Files:** `src/package.json` (lines 179-182, 320-325), `webview-ui/src/hooks/useAutoApprovalState.ts`
+
 
 ---
 
@@ -757,7 +753,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Enterprise device management and policy enforcement.
 
-**Reference:** `src/services/mdm/`, `src/extension.ts` (lines 83-84)
+
 
 ### User Stories
 
@@ -772,7 +768,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Policy enforcement
 - ✅ Compliance reporting
 
-**Files:** `src/services/mdm/MdmService.ts`
+
 
 ---
 
@@ -780,7 +776,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Advanced code parsing for syntax-aware operations.
 
-**Reference:** `src/services/tree-sitter/`, dependencies: `tree-sitter-wasms`, `web-tree-sitter`
+
 
 ### User Stories
 
@@ -795,7 +791,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Syntax node identification
 - ✅ Code structure analysis
 
-**Files:** `src/services/tree-sitter/`, dependencies: `tree-sitter-wasms@0.1.12`
+
 
 ---
 
@@ -803,7 +799,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Sound notifications for task completion and events.
 
-**Reference:** `webview-ui/src/components/chat/ChatView.tsx`, dependencies: `use-sound`, `sound-play`
+
 
 ### User Stories
 
@@ -818,7 +814,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Configurable audio settings
 - ✅ Multiple audio types support
 
-**Files:** `webview-ui/src/components/chat/ChatView.tsx` (lines 82-85), `src/assets/audio/`
+
 
 ---
 
@@ -841,7 +837,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Branch management
 - ✅ Diff generation
 
-**Files:** Dependencies: `simple-git`
 
 ---
 
@@ -860,7 +855,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ No plaintext keys in settings
 - ✅ Key rotation support
 
-**Files:** `src/core/config/`
+
 
 ---
 
@@ -875,7 +870,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Timeout protection
 - ✅ Audit logging
 
-**Files:** `src/services/command/`, `webview-ui/src/utils/command-validation.ts`
+
 
 ---
 
@@ -892,7 +887,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Provider-specific counting
 - ✅ Caching for repeated content
 
-**Files:** `src/workers/countTokens.ts`, dependencies: `tiktoken`
+
 
 ---
 
@@ -907,7 +902,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ File content cache
 - ✅ Configurable cache sizes
 
-**Files:** `src/services/code-index/cache-manager.ts`, dependencies: `lru-cache`
+
 
 ---
 
@@ -924,7 +919,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Log levels (info, warn, error)
 - ✅ Dual logging (console + channel)
 
-**Files:** `src/utils/outputChannelLogger.ts`
+
 
 ---
 
@@ -939,7 +934,6 @@ This document captures all implemented features in the Papillon AI VS Code exten
 - ✅ Timestamp tracking
 - ✅ Governance layer integration
 
-**Files:** Governance settings (lines 443-446)
 
 ---
 
@@ -962,44 +956,8 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 ---
 
-## Appendix A: File Structure Reference
 
-```
-papillon-ai-fork/
-├── src/
-│   ├── api/                    # AI provider integrations
-│   ├── core/                   # Core extension logic
-│   ├── services/               # Feature services
-│   │   ├── browser/           # Browser automation
-│   │   ├── code-index/        # Code indexing
-│   │   ├── command/           # Command execution
-│   │   ├── mcp/               # MCP integration
-│   │   ├── marketplace/       # Extension marketplace
-│   │   ├── mdm/               # Device management
-│   │   ├── search/            # Code search
-│   │   └── tree-sitter/       # Code parsing
-│   ├── integrations/          # VS Code integrations
-│   │   ├── editor/            # Editor features
-│   │   └── terminal/          # Terminal features
-│   ├── utils/                 # Utility functions
-│   └── extension.ts           # Extension entry point
-├── webview-ui/                # React UI components
-│   └── src/
-│       ├── components/        # UI components
-│       │   ├── chat/         # Chat interface
-│       │   ├── settings/     # Settings UI
-│       │   ├── history/      # Task history
-│       │   └── marketplace/  # Marketplace UI
-│       └── i18n/             # Translations
-└── packages/                  # Shared packages
-    ├── cloud/                # Cloud services
-    ├── telemetry/            # Analytics
-    └── types/                # TypeScript types
-```
-
----
-
-## Appendix B: Dependencies Summary
+## Appendix A: Dependencies Summary
 
 ### Core Dependencies (40.49 MB package)
 - **AI SDKs**: @anthropic-ai/sdk, openai, @google/genai, ollama
