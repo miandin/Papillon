@@ -108,7 +108,7 @@ Papillon AI is built in layers, like a cake. Each layer has a specific responsib
 │                   ORCHESTRATION LAYER                        │
 │                                                              │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │              ClineProvider (The Brain)                │  │
+│  │              Provider (The Brain)                │  │
 │  │                                                        │  │
 │  │  • Manages conversations                              │  │
 │  │  • Coordinates components                             │  │
@@ -162,7 +162,7 @@ Papillon AI is built in layers, like a cake. Each layer has a specific responsib
 - Real-time updates
 
 **Orchestration Layer** (The coordinator)
-- ClineProvider manages everything
+- Provider manages everything
 - Routes messages between UI and services
 - Maintains conversation state
 - Coordinates tool execution
@@ -190,11 +190,11 @@ Papillon AI is built in layers, like a cake. Each layer has a specific responsib
 
 ### 3.1 The Heart of Papillon AI
 
-At the center of Papillon AI is the **ClineProvider** - think of it as the brain that coordinates all activities.
+At the center of Papillon AI is the **Provider** - think of it as the brain that coordinates all activities.
 
 ```
                     ┌─────────────────────┐
-                    │   ClineProvider     │
+                    │     Provider     │
                     │    (The Brain)      │
                     └──────────┬──────────┘
                                │
@@ -238,7 +238,7 @@ Step 2: UI → Extension
 └────────────┬─────────────────────────┘
              │
              ▼
-Step 3: ClineProvider Receives
+Step 3: Provider Receives
 ┌──────────────────────────────────────┐
 │ • Creates task ID                    │
 │ • Gathers context (file, project)   │
