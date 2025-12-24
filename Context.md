@@ -162,7 +162,7 @@ This document captures all implemented features in the Papillon AI VS Code exten
 
 **Description:** Integration with MCP servers for extended tool capabilities.
 
-**Reference:** `src/services/mcp/`, `src/package.json` (lines 84-87)
+
 
 ### User Stories
 
