@@ -329,7 +329,7 @@ The butterfly effect in chaos theory suggests that small changes can have large 
 
 **Version 1.0.0** | **macOS Ready** | **Production Tested**
 
-[Install Now]([(https://github.com/miandin/Papillon/releases/download/V1.1.0/papillon-ai-v1.1.0.vsix)) 
+[Install Now] https://github.com/miandin/Papillon/releases/download/V1.1.0/papillon-ai-v1.1.0.vsix
 
 ---
 
