@@ -2,7 +2,7 @@
 ## The Big Picture: How Everything Works Together
 
 **Version:** 1.1.0  
-**Last Updated:** December 24, 2024  
+**Last Updated:** December 24, 2025  
 **Audience:** Developers, Architects, Technical Leaders
 
 ---
