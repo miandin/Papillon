@@ -9,10 +9,10 @@
 ## Executive Summary
 
 This document captures all implemented features in the Papillon AI VS Code extension, organized as Agile Epics with nested User Stories. Features were automatically identified from source code analysis including:
-- Extension manifest (`package.json`)
-- Service implementations (`/src/services/`)
-- API handlers (`/src/api/`)
-- UI components (`/webview-ui/`)
+- Extension manifest
+- Service implementations 
+- API handlers
+- UI components
 - Configuration settings
 
 ---
