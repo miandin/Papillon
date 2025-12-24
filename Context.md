@@ -1,8 +1,8 @@
 # Papillon AI Extension - Features, Epics & User Stories
 
 **Version:** 1.1.0  
-**Generated:** December 24, 2024  
-**Source:** papillon-ai-v1.1.0.vsix
+**Generated:** December 24, 2025 
+**Source:** papillon-ai-v1.1.1.vsix
 
 ---
 
