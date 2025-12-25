@@ -1,0 +1,94 @@
+name: 🐞 Bug Report
+description: Something isn’t working in Papillon AI
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include enough details for us to reproduce it.
+
+  - type: input
+    id: papillon_version
+    attributes:
+      label: Papillon AI version
+      placeholder: "e.g., 1.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: vscode_version
+    attributes:
+      label: VS Code version
+      placeholder: "e.g., 1.95.0"
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      placeholder: "e.g., 14.6 (Sonoma)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chat / Flutter
+        - Agent / Chrysalis
+        - Code Actions / Metamorphosis
+        - Index / Wingspan
+        - Settings / Governance
+        - Packaging / VSIX
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1) ...
+        2) ...
+        3) ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (Output → Papillon)
+      description: Paste relevant logs (remove secrets).
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I removed any secrets/tokens from logs and screenshots.
+          required: true
+        - label: I can reproduce this consistently.
+          required: false
