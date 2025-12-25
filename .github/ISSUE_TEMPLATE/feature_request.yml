@@ -14,9 +14,9 @@ body:
       label: Area
       options:
         - Chat / Flutter
-        - Agent / Chrysalis
-        - Code Actions / Metamorphosis
-        - Index / Wingspan
+        - Agent 
+        - Code Actions 
+        - Index 
         - Providers / Models
         - Governance Layer
         - Other
