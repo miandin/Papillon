@@ -1,0 +1,67 @@
+name: ✨ Feature Request
+description: Propose a new capability for Papillon AI
+title: "[Feature] "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests should be additive and optional (no breaking changes).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chat / Flutter
+        - Agent / Chrysalis
+        - Code Actions / Metamorphosis
+        - Index / Wingspan
+        - Providers / Models
+        - Governance Layer
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      placeholder: What pain are you facing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      placeholder: What should Papillon AI do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: ux
+    attributes:
+      label: UX / UI notes (optional)
+      placeholder: Describe how it should look/feel (screenshots/mockups welcome).
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Nice to have
+        - Important
+        - Critical
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I’m willing to contribute a PR for this.
+          required: false
