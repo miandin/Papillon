@@ -1,0 +1,57 @@
+name: 🎨 UX / Cosmetic Enhancement
+description: UI polish, copy changes, branding tweaks, layout improvements
+title: "[UX] "
+labels: ["type:ux"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is for cosmetic/UI improvements that should not change existing behavior.
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: UI Surface
+      options:
+        - Home panel
+        - Chat panel
+        - Agent panel
+        - Sidebar / Activity bar
+        - Settings
+        - Status bar
+        - Notifications / Messages
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior / look
+      placeholder: What does it look like today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired change
+      placeholder: What should it look like instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: Screenshots / mockups (optional)
+      placeholder: Drag-and-drop images into this issue or describe what to change.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: This request should not change core functionality (cosmetic only).
+          required: true
