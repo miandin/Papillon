@@ -364,6 +364,24 @@ This ensures Papillon can operate in two modes:
 <img width="572" height="455" alt="image" src="https://github.com/user-attachments/assets/5a8b46bf-691d-48f2-9b7b-953a5437f929" />
 
 ---
+## Support
+
+Papillon AI is open source—feedback and contributions are welcome.
+
+- **Bugs / crashes:** open a **Bug Report** (Issues → New issue → Bug Report)
+- **Feature ideas:** open a **Feature Request**
+- **Cosmetic / UX tweaks:** open a **UX Enhancement**
+- **Questions / setup help:** use **Discussions** (recommended)
+
+### Before you file
+Please include:
+- Papillon AI version
+- VS Code version
+- macOS version
+- Steps to reproduce (or expected vs actual behavior)
+- Relevant logs: **View → Output → “Papillon”**
+- Screenshots (if UI related)
+---
 
 ## 🦋 Start Your Transformation Today
 
